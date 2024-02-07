@@ -11357,13 +11357,11 @@ const DEFAULT_TARGET = {
 };
 const DEFAULT_CONTAINERS = {
     'x86_64-unknown-linux-gnu': {
-        auto: 'quay.io/pypa/manylinux2014_x86_64:latest',
-        '2010': 'quay.io/pypa/manylinux2010_x86_64:latest',
-        '2_12': 'quay.io/pypa/manylinux2010_x86_64:latest',
-        '2014': 'quay.io/pypa/manylinux2014_x86_64:latest',
-        '2_17': 'quay.io/pypa/manylinux2014_x86_64:latest',
-        '2_24': 'quay.io/pypa/manylinux_2_24_x86_64:latest',
-        '2_28': 'quay.io/pypa/manylinux_2_28_x86_64:latest'
+        auto: 'ghcr.io/rust-cross/manylinux2014-cross:x86_64',
+        '2014': 'ghcr.io/rust-cross/manylinux2014-cross:x86_64',
+        '2_17': 'ghcr.io/rust-cross/manylinux2014-cross:x86_64',
+        '2_24': 'messense/manylinux_2_24-cross:x86_64',
+        '2_28': 'ghcr.io/rust-cross/manylinux_2_28-cross:x86_64'
     },
     'x86_64-unknown-linux-musl': {
         auto: 'ghcr.io/rust-cross/rust-musl-cross:x86_64-musl',
